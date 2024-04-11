@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="logo1.jpg">
+        <style>
+            h1{
+                margin-top: 3px;
+            }
+            .div{
+                background-color: #0077ff2f;
+                border-radius: 30px;
+                margin: 5px;
+                animation: slideUAndFade 2s;
+            }
+            .div p:hover{
+                animation: pulse 2s infinite;
+            }
+            @keyframes slideUAndFade {
+                0% {
+                opacity: 0;
+                transform: translateY(100px); /* start off screen to the left */
+                }
+                100% {
+                opacity: 1;
+                transform: translateY(0px);  /* slide in to the left */
+                }
+            }
+           
+        </style>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo.jpg" class="pri">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="content" align="center">
+                
+                <h1 >My Skills</h1>
+                <p>I am quite familiar with the following are platforms that and if you like to know,<br> you can click on one and view what I have accomplished using each specific platforms! </p>
+                <br>
+            <div class="grid2">
+                <div class="div">
+                    <button type="button" onclick="location.href='Html/index.html'">HTML</button>
+                    <p>Experienced in HTML for structuring web content and creating responsive web pages. Familiar with HTML5 features for semantic markup and multimedia integration.</p>
+                </div>
+                <div class="div">
+                    <button type="button" onclick="location.href='rps/00rps.html'" >Javascript</button>
+                    <p>Proficient in JavaScript for building interactive web applications. Some level of Skill in on framework like React.js to create dynamic user interfaces and enhance user experience.</p>
+                </div>
+                <div class="div">
+                    <button type="button" onclick="location.href='cssv1/mition.html'">CSS</button>
+                    <p>Strong background in CSS for styling and designing web interfaces. Proficient in CSS preprocessors like SASS and LESS to streamline styling workflow and maintain code consistency</p>
+                </div>
+                <div class="div">
+                    <button type="button" onclick="location.href='python/python.html'">Python</button>
+                    <p>Proficient in Python for developing versatile applications, data analysis, and automation scripts. Experienced with libraries like NumPy, pygame and Django for efficient development.</p>
+                </div>
+                <div class="div">
+                    <button type="button" onclick="location.href='c++/c++.html'">C++</button>
+                    <p>Experienced in C++ for high-performance computing and system-level programming. Proficient in working with data structures, algorithms, and object-oriented design principles.</p>
+                </div>
+                <div class="div">
+                    <button type="button"onclick="location.href='nodejs/node.html'">NodeJs</button>
+                    <p>Skilled in Node.js for server-side application development. intermidiate in building backend services using Express.js and integrating with various databases</p>
+                </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        
+        
+
+    </body>
+</html>

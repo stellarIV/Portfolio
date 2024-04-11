@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="logo1.jpg">
+        <style>
+            
+            .btn{
+                padding: 15px 10px 15px 10px;
+                margin-top: -20px;
+                border: 5px solid aliceblue;
+                
+                background-color: rgb(7, 249, 59);
+            }
+            .butify{
+                width: 90%;
+                height: 240px;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                background-color: aliceblue;
+                border-radius: 40px;
+            }
+            h2{
+                margin-left: 30px;
+            }
+            .pag{
+                padding-top: -10px;
+                padding: 10px;
+                color: black;
+                animation: fadeIn 3s;
+            }
+           
+        </style>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo.jpg" class="pri">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div class="container" >
+                <div class="div1" align="right"><p class="para">Hi, I'm <b>Biruk</b> Temesgen <br />From Bahir Dar</p></div>
+                <div class="div2"><img src="Profilepic.jpg" alt="Biruk's picture" id="propic"></div>            
+                </div>
+                
+        </div>
+        <div align="center">
+            <h2 align="left">Web Basics</h2>
+            <div class="butify" align="left">
+                <button class="btn b1" onclick="alterPara('html');">HTML</button>
+                <button class="btn b2" onclick="alterPara('css');">CSS</button>
+                <button class="btn b3" onclick="alterPara('js');">JavaScript</button><br>
+                <p class="pag ">Mastering HTML, CSS, and JavaScript is essential for web developers aiming to create engaging and interactive websites that meet modern design standards and user expectations. These technologies form the foundation of web development and are indispensable tools for building compelling digital experiences on the internet.</p>
+            </div>
+        </div>
+        <script>
+            let bttn= document.querySelector('.b1');
+            let bttn1= document.querySelector('.b2');
+            let bttn2= document.querySelector('.b3');
+            let para= document.querySelector('.pag');
+            function alterPara(word){
+                if(word==='html'){
+                    bttn.style.backgroundColor="red";
+                    bttn1.style.backgroundColor="rgb(7, 249, 59)";
+                    bttn2.style.backgroundColor="rgb(7, 249, 59)";
+                    para.innerHTML=' <b>Description:</b> HTML, also known as Hypertext Markup Language, is the standard markup language used to create the structure and content of web pages on the internet. HTML uses a system of tags to define various elements within a document, such as headings, paragraphs, lists, links, images, tables, forms, and more. These elements provide the basic building blocks of a webpage and establish a hierarchical structure that web browsers use to render content accurately for users.';
+                }else if (word==='css'){
+                    bttn1.style.backgroundColor="red";
+                    bttn.style.backgroundColor="rgb(7, 249, 59)";
+                    bttn2.style.backgroundColor="rgb(7, 249, 59)";
+                    para.innerHTML='<b>Description:</b> CSS, or Cascading Style Sheets, is a styling language that complements HTML by controlling the presentation, layout, and design of web pages. CSS allows developers to customize the appearance of HTML elements by defining styles like colors, fonts, spacing, alignment, borders, backgrounds, and transitions. It separates the content structure from its visual representation, making it easier to style and maintain websites consistently across different pages.';
+                }  else if (word==='js'){
+                    bttn2.style.backgroundColor="red";
+                    bttn1.style.backgroundColor="rgb(7, 249, 59)";
+                    bttn.style.backgroundColor="rgb(7, 249, 59)";
+                    para.innerHTML='<b>Description:</b> JavaScript is a powerful and versatile programming language used to add interactivity, behavior, and dynamic features to web pages. As a client-side scripting language, JavaScript runs directly in a web browser to handle user interactions, manipulate the DOM (Document Object Model), validate forms, create animations, fetch data from servers, and update content dynamically without requiring page reloads. JavaScript is essential for building interactive web applications and enhancing user engagement.';
+                }
+            }
+        </script>
+    </body>
+</html>

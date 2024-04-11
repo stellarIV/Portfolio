@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+    <style>
+        body{
+            width: auto;
+            background-color: #200258;
+        }
+        .container{
+            margin-top: -10px;
+            margin-left: -10px;
+            top: 0;
+            left: 0;
+            width: 102.5%;
+            height: 502px;
+            background-color: rgba(32, 21, 228, 0.5);
+            display: flex;
+            
+        }
+
+        
+        .bgclip{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            z-index: -1;
+            
+        }
+        
+                
+        .navbar{
+            font-family: Arial, Helvetica, sans-serif;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            width: 100%;
+            margin-top: 2%;
+            margin-left: 10px;
+            padding: 27px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar ul li{
+            top: 1.1%;
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+   
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: #ffffff;
+            text-transform: uppercase;
+            
+
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #00bcfb;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+
+        }
+        .navbar h1{
+            top: 25%;
+            width: 100%;
+            font-size: 50px;
+            text-align: center;
+            position: absolute;
+            align-items: center;
+            cursor:default;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color:aliceblue;
+            transition: all .8s ease-in-out;
+        }
+        .navbar h1:hover{
+            color: rgba(11, 184, 252, 0.855);
+                    
+        }
+       
+        h2{
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 40px;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0%,100%{ transform: scale(1);}
+            50%{ transform: scale(1.1);}
+            
+        }
+        
+        .dimg{
+            background-color: rgba(43, 33, 233, 0.182);
+            border: 2px solid blue;
+            border-radius: 20px;
+            width: 200px;
+            height: 261px;
+            position: static;
+            margin-top: 40px;
+            margin-left: 100px;
+            display: inline-block;
+            align-items: center;
+            
+            
+
+        }
+        .dimg:hover{
+            cursor: pointer;
+            /* animation: animate 4s linear infinite; */
+            animation: pulse 2s infinite;
+        }
+
+        
+
+        img{
+            object-fit: cover;
+            position: absolute;
+            border-radius: 20px ;
+            z-index: -1;
+        }
+        .black{
+            margin-left: -10px;
+            margin-top: 50px;
+            background-color: #0a0415;
+            width: 88%;
+            padding: 100px;
+            color: #fff;
+            
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            padding: 3px 0;
+            text-align: center;
+            margin: 20px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #8c07c9;
+            background:blue;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: 1s;
+        }
+        button:hover{
+            background: #e100ff;
+            color: #000;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <div class="navbar">
+            <button onclick="location.href='../services.html'">Go Back</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quick view</a></li>
+                <li><a href="#">Genre</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Upload</a></li>
+            </ul>
+            <h1>Experiance the unthinkable!</h1>
+        </div>
+        <video loop autoplay muted playsinline class="bgclip">
+            <source src="fk4.mp4" type="video/mp4">
+        </video>
+        
+        
+    </div>
+    <h2>New</h2>
+    <div class="dimg"><img src="bs.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="1.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="3.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="bs.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="1.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="3.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="1.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="bs.jpg" width="200px" alt=""></div>
+    <h2>Trending</h2>
+    <div class="dimg"><img src="1.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="1.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="3.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="bs.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="bs.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="3.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="1.jpg" width="200px" alt=""></div>
+    <div class="dimg"><img src="bs.jpg" width="200px" alt=""></div>
+    
+    <div class="black" align="left" >
+        <address>
+            name: Biruk Temesgen <br>
+            <hr width="500px" align="left">
+            email: biruktmg@gmail.com
+        </address>
+    </div>
+    
+    
+</body>
+
+</html>
